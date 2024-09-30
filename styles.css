@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.topbar {
+    display: flex;
+    width:100%;
+    margin: 0;
+    overflow: none;
+    height: 10vh;
+}
+#left-topbar{
+    width: 35%;
+    padding: 6.5px;
+    display: block;
+    background-color: #EEEEEE;
+    border-right: 1px solid #ddddddeb;
+}
+
+#left-topbar div {  
+    text-align: right;
+    color: gray;
+    height: 100%;
+    position: relative;
+    bottom: 30%;
+}
+
+
+#left-topbar div i {  
+   margin-left: 20px;
+   margin-right: 20px;
+   font-size: x-large;
+}
+
+#left-topbar #avatar {
+    position: relative;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+#right-topbar #avatar {
+    position: relative;
+    top: 50%;
+    left: 10px;
+    width:6%;
+    transform: translateY(-50%);
+}
+
+#right-topbar {
+    overflow:auto;
+    background-color: #EEEEEE;
+    width: 65%;
+}
+
+#contact-info {
+    position: absolute;
+    display: inline-block;
+    top: 1vh;
+    margin: 0;
+    left: 40%;
+}
+
+#contact-options {
+    position: absolute;
+    top: 3vh;
+    right: 02%;
+    color: gray;
+    font-size: x-large;
+}
+
+#contact-options i {
+    margin:10px
+}
+
+#contact-info span {
+    color: gray;
+}
+
+#content {
+    width: 100%;
+    display: inline-flex;
+}
+#sidebar {
+    background-color: #FFFFFF;
+    width: 35%;
+    height: 90vh;
+    overflow-y: scroll;
+    
+}
+#main_chat {
+    background-image:url(media/bg.png);
+    background-repeat: repeat;
+    background-size:contain;
+    overflow: auto;
+    width: 65%;
+    border: none;
+    height: 90vh;
+    padding: 20px;
+}
+#avatar {
+    display: block;
+    width: 9%;
+    height: auto;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+#searchbar {
+    padding: 10px;
+    background-color: #FBFBFB;
+}
+
+#searchbar input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 33px;
+    border: 1px solid #e2e1e1;
+    border-radius: 5px;
+    font-family: "Arimo", sans-serif, 'FontAwesome';
+    padding-left: 10px;
+}
+.chat {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    overflow-x: hidden;
+    display: flex;
+    border-bottom: 1px solid #ddddddeb;
+}
+
+.chat:hover {
+    background-color: #ddddddeb;
+}
+
+.chat #avatar {
+    display: block;
+    margin-right: 20px;
+    width: 11%;
+
+}
+#chat-details {
+    padding-top:1%;
+    width: 90%;
+    font-size: medium;
+}
+
+#chat-details #avatar{
+    display: block;
+    height: auto;
+}
+
+#chat-details span {
+    position:relative;
+    left: 85%;
+    bottom: 80%;
+    color: gray;
+}
+#chat-details h2 {
+    font-weight:600;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#chat-details p {
+    font-weight: lighter;
+    color: gray;
+    margin:0;
+}
+
+#icondiv {
+    width: 10%;
+    background-color: red;
+    width: 80%;
+    text-align: right;
+}
+
+.text_message  {
+    background: white;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50px 50px 50px 0px;
+    
+    position: relative;
+}
+
+.message_line {
+    width: 100%;
+    margin-bottom: 13px;
+
+    display: inline-block;
+}
+
+.green {
+    right: 0;
+    float: right;
+    text-align: right;
+    background: #DCF8C6;
+    border-radius: 50px 0px 50px 50px;
+}
+
+.message_input {
+    position: absolute;
+    bottom: 1%;
+    width: 62%;
+}
+
+.message_input input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    border: 1px solid #e2e1e1;
+    border-radius: 5px;
+    font-family: "Arimo", sans-serif, 'FontAwesome';
+    font-size: large;
+    padding-left: 10px;
+}
